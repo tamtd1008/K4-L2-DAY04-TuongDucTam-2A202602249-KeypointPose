@@ -217,3 +217,8 @@ git commit -m "Day 4: pose annotation + eval"
 ```
 
 Đối chiếu [RUBRIC.md](RUBRIC.md) một lượt trước khi push.
+
+
+python3 tools/coco_kp_to_yolo_pose.py --coco annotations/coco_keypoints/person_keypoints_default.json --out dataset/labels/train
+
+python3 tools/check_pose_labels.py --images dataset/images/train --labels dataset/labels/train
