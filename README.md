@@ -84,9 +84,7 @@ không cần cài gì (trừ `visualize_pose.py` cần Pillow). OKS và per-keyp
 
 ```bash
 # 1. Sau khi export từ CVAT: COCO Keypoints 1.0 -> nhãn để train
-python3 tools/coco_kp_to_yolo_pose.py \
-    --coco annotations/coco_keypoints/person_keypoints_default.json \
-    --out dataset/labels/train
+python3 tools/coco_kp_to_yolo_pose.py --coco annotations/coco_keypoints/person_keypoints_default.json --out dataset/labels/train
 
 # 2. Kiểm định dạng - chạy trước khi nộp, không cần gold
 python3 tools/check_pose_labels.py --images dataset/images/train --labels dataset/labels/train
