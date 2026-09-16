@@ -5,8 +5,7 @@ Slide 47: "so report trước, so pixel sau". Hai người gán cùng một bộ
 v=1 lệch hẳn nhau thì họ đang bất đồng về GUIDELINE, không phải về bức ảnh - và
 bảng này trả lời trong 2 phút, còn soi từng chấm mất 2 giờ.
 
-    python3 tools/visibility_report.py --labels dataset/labels/train \
-        --out outputs/visibility_report.json --markdown reports/visibility_report.md
+    python3 tools/visibility_report.py --labels dataset/labels/train --out outputs/visibility_report.json --markdown reports/visibility_report.md
     # so với bài của bạn cùng nhóm:
     python3 tools/visibility_report.py --labels dataset/labels/train --compare ../ban_cung_nhom/labels/train
 """

@@ -4,9 +4,7 @@
 Chạy SAU khi protected release mở. Ngoài điểm số, script trả về một danh sách lỗi
 đã phân loại đúng theo slide 43/46 - dùng nó để rework, đừng chỉ nhìn con số.
 
-    python3 tools/evaluate_pose_annotations.py \\
-        --pred dataset/labels/train --gold gold/labels/train \\
-        --images dataset/images/train --out outputs/eval_vs_gold.json
+    python3 tools/evaluate_pose_annotations.py --pred dataset/labels/train --gold gold/labels/train --images dataset/images/train --out outputs/eval_vs_gold.json
 """
 
 from __future__ import annotations
